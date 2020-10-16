@@ -1,0 +1,166 @@
+08:49:44.523 INFO  [main] com.tibco.thor.frwk - TIBCO BusinessWorks version 2.5.4, build V57, 2020-08-14
+
+<>@BWEclipseAppNode> 08:49:54.494 INFO  [main] com.tibco.thor.frwk.Deployer - Started by BusinessStudio.
+08:49:59.941 INFO  [main] com.tibco.bw.frwk.engine.BWEngine - TIBCO-BW-FRWK-300002: BW Engine [Main] started successfully.
+08:50:00.141 INFO  [Framework Event Dispatcher: Equinox Container: 105e2917-410f-001b-16a7-e79100c31b07] com.tibco.thor.frwk.Deployer - TIBCO-THOR-FRWK-300001: Started OSGi Framework of AppNode [BWEclipseAppNode] in AppSpace [BWEclipseAppSpace] of Domain [BWEclipseDomain]
+08:50:00.290 INFO  [Framework Event Dispatcher: Equinox Container: 105e2917-410f-001b-16a7-e79100c31b07] com.tibco.thor.frwk.Application - TIBCO-THOR-FRWK-300018: Deploying BW Application [REST_FileReceiver:1.0].
+08:50:00.357 INFO  [EventAdminThread #9] com.tibco.thor.frwk.Application - TIBCO-THOR-FRWK-300019: BW Application [REST_FileReceiver:1.0] is impaired.
+08:50:00.363 INFO  [Framework Event Dispatcher: Equinox Container: 105e2917-410f-001b-16a7-e79100c31b07] com.tibco.thor.frwk.Application - Started by BusinessStudio, ignoring .enabled settings.
+08:50:04.209 INFO  [Job_Executor0] com.tibco.thor.frwk.Application - TIBCO-THOR-FRWK-300021: All Application dependencies are resolved for Application [REST_FileReceiver:1.0]
+08:50:07.260 INFO  [EventAdminThread #20] com.tibco.thor.frwk.Application - TIBCO-THOR-FRWK-300006: Started BW Application [REST_FileReceiver:1.0]
+08:51:06.415 ERROR [bw-flowlimit-executor-provider-0] c.t.b.b.r.r.jersey.BaseInflector - TIBCO-BW-BINDING-REST-500008: Error Occurred while creating User Part. Responding to client with error message.
+java.lang.NullPointerException: null
+	at com.tibco.bw.binding.rest.runtime.jersey.BaseInflector.createAdvancedFormDocument(BaseInflector.java:957)
+	at com.tibco.bw.binding.rest.runtime.jersey.BaseInflector.apply(BaseInflector.java:653)
+	at com.tibco.bw.binding.rest.runtime.jersey.BaseInflector.apply(BaseInflector.java:1)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.access$100(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker$2.call(ResourceMethodInvoker.java:336)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker$2.call(ResourceMethodInvoker.java:333)
+	at org.glassfish.jersey.server.ServerRuntime$AsyncResponder$2$1.run(ServerRuntime.java:865)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime$AsyncResponder$2.run(ServerRuntime.java:860)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+08:51:09.663 INFO  [EventAdminThread #15] com.tibco.thor.frwk.Application - TIBCO-THOR-FRWK-300019: BW Application [REST_FileReceiver:1.0] is impaired.
+08:51:09.808 ERROR [qtp1271565999-35] c.t.b.thor.runtime.model.Constituent - The following error has occurred for "name: REST_FileReceiver.module version: 1.0.0.qualifier bundle name: REST_FileReceiver.module " which needs to be resolved.
+08:51:09.811 ERROR [qtp1271565999-35] c.t.b.thor.runtime.model.Constituent - TIBCO-BW-CORE-500202: Failed to install BW Component [ComponentRESTServer], Application [REST_FileReceiver:1.0].
+   <CausedBy> com.tibco.bx.core.faults.BxException: BX-600025: Create module failed for module [ComponentRESTServer] version [1.0.0.qualifier] application [REST_FileReceiver 1.0].
+   <CausedBy> com.tibco.bx.core.faults.BxException: BX-600018: Process [rest_filereceiver.module.RESTServer] not found.
+
+
+08:51:09.815 ERROR [qtp1271565999-35] c.t.b.thor.runtime.model.Constituent - The following error has occurred for "name: REST_FileReceiver.module version: 1.0.0.qualifier bundle name: REST_FileReceiver.module " which needs to be resolved.
+08:51:09.815 ERROR [qtp1271565999-35] c.t.b.thor.runtime.model.Constituent - TIBCO-BW-CORE-500202: Failed to install BW Component [ComponentRESTServer], Application [REST_FileReceiver:1.0].
+   <CausedBy> com.tibco.bx.core.faults.BxException: BX-600025: Create module failed for module [ComponentRESTServer] version [1.0.0.qualifier] application [REST_FileReceiver 1.0].
+   <CausedBy> com.tibco.bx.core.faults.BxException: BX-600018: Process [rest_filereceiver.module.RESTServer] not found.
+
+
+!SESSION 2020-10-16 08:49:38.854 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_221
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -dev file:D:/MyWorkspace/.metadata/.plugins/org.eclipse.pde.core/BWApplication/dev.properties -os win32 -ws win32 -arch x86_64 -consoleLog -console -clean
+
+!ENTRY com.tibco.bw.sharedresource.runtime 4 0 2020-10-16 08:51:10.424
+!MESSAGE FrameworkEvent ERROR
+08:51:10.448 INFO  [EventAdminThread #5] com.tibco.thor.frwk.Application - TIBCO-THOR-FRWK-300019: BW Application [REST_FileReceiver:1.0] is impaired.
+!STACK 0
+java.lang.IllegalStateException: BundleContext is no longer valid
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.checkValid(BundleContextImpl.java:983)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.registerService(BundleContextImpl.java:482)
+	at com.tibco.bw.sharedresource.runtime.ResourceDependencyHandler.Ó00000(ResourceDependencyHandler.java:297)
+	at com.tibco.bw.sharedresource.runtime.ResourceDependencyHandler.ô00000(ResourceDependencyHandler.java:563)
+	at com.tibco.bw.sharedresource.runtime.ResourceDependencyHandler.access$4(ResourceDependencyHandler.java:553)
+	at com.tibco.bw.sharedresource.runtime.ResourceDependencyHandler$_Oo.dependencyStateChanged(ResourceDependencyHandler.java:767)
+	at com.tibco.bw.dependencyframework.DependencyManager.o00000(DependencyManager.java:168)
+	at com.tibco.bw.dependencyframework.DependencyManager.access$0(DependencyManager.java:156)
+	at com.tibco.bw.dependencyframework.DependencyManager$DependencyStateChangeListenerImpl.dependencyStateChanged(DependencyManager.java:213)
+	at com.tibco.bw.dependencyframework.AbstractDependency.notifyListeners(AbstractDependency.java:108)
+	at com.tibco.bw.dependencyframework.builder.DependencyNode.dependencyStateChanged(DependencyNode.java:147)
+	at com.tibco.bw.dependencyframework.DependencyManager.o00000(DependencyManager.java:168)
+	at com.tibco.bw.dependencyframework.DependencyManager.access$0(DependencyManager.java:156)
+	at com.tibco.bw.dependencyframework.DependencyManager$DependencyStateChangeListenerImpl.dependencyStateChanged(DependencyManager.java:213)
+	at com.tibco.bw.dependencyframework.AbstractDependency.notifyListeners(AbstractDependency.java:108)
+	at com.tibco.bw.dependencyframework.builder.DependencyNode.dependencyStateChanged(DependencyNode.java:147)
+	at com.tibco.bw.dependencyframework.DependencyManager.o00000(DependencyManager.java:168)
+	at com.tibco.bw.dependencyframework.DependencyManager.access$0(DependencyManager.java:156)
+	at com.tibco.bw.dependencyframework.DependencyManager$DependencyStateChangeListenerImpl.dependencyStateChanged(DependencyManager.java:213)
+	at com.tibco.bw.dependencyframework.AbstractDependency.notifyListeners(AbstractDependency.java:108)
+	at com.tibco.bw.dependencyframework.AbstractDependency.reevaluateDependencyState(AbstractDependency.java:130)
+	at com.tibco.bw.sharedresource.runtime.dependency.BundleActiveStateDependency.addingBundle(BundleActiveStateDependency.java:53)
+	at com.tibco.bw.sharedresource.runtime.dependency.BundleActiveStateDependency.addingBundle(BundleActiveStateDependency.java:1)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:469)
+	at org.osgi.util.tracker.BundleTracker$Tracked.customizerAdding(BundleTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:256)
+	at org.osgi.util.tracker.AbstractTracked.track(AbstractTracked.java:229)
+	at org.osgi.util.tracker.BundleTracker$Tracked.bundleChanged(BundleTracker.java:444)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.dispatchEvent(BundleContextImpl.java:902)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEventPrivileged(EquinoxEventPublisher.java:165)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:75)
+	at org.eclipse.osgi.internal.framework.EquinoxEventPublisher.publishBundleEvent(EquinoxEventPublisher.java:67)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor.publishModuleEvent(EquinoxContainerAdaptor.java:102)
+	at org.eclipse.osgi.container.Module.publishEvent(Module.java:466)
+	at org.eclipse.osgi.container.Module.start(Module.java:457)
+	at org.eclipse.osgi.container.ModuleContainer.update(ModuleContainer.java:354)
+	at org.eclipse.osgi.storage.Storage.update(Storage.java:711)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.update(EquinoxBundle.java:439)
+	at com.tibco.bw.thor.management.node.BundleResource.update(BundleResource.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:160)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1154)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.equinox.http.servlet.internal.HttpServiceRuntimeImpl$LegacyServlet.service(HttpServiceRuntimeImpl.java:1223)
+	at org.eclipse.equinox.http.servlet.internal.registration.EndpointRegistration.service(EndpointRegistration.java:148)
+	at org.eclipse.equinox.http.servlet.internal.servlet.ResponseStateHandler.processRequest(ResponseStateHandler.java:62)
+	at org.eclipse.equinox.http.servlet.internal.context.DispatchTargets.doDispatch(DispatchTargets.java:131)
+	at org.eclipse.equinox.http.servlet.internal.servlet.ProxyServlet.service(ProxyServlet.java:74)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.equinox.http.jetty.internal.HttpServerManager$InternalHttpServiceServlet.service(HttpServerManager.java:284)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:873)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:542)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1700)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1667)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:505)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:132)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:698)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:804)
+	at java.lang.Thread.run(Thread.java:748)
