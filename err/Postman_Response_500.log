@@ -1,0 +1,211 @@
+{
+    "cause": null,
+    "stackTrace": [
+        {
+            "methodName": "createAdvancedFormDocument",
+            "fileName": "BaseInflector.java",
+            "lineNumber": 957,
+            "className": "com.tibco.bw.binding.rest.runtime.jersey.BaseInflector",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "apply",
+            "fileName": "BaseInflector.java",
+            "lineNumber": 653,
+            "className": "com.tibco.bw.binding.rest.runtime.jersey.BaseInflector",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "apply",
+            "fileName": "BaseInflector.java",
+            "lineNumber": 1,
+            "className": "com.tibco.bw.binding.rest.runtime.jersey.BaseInflector",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "invoke0",
+            "fileName": "NativeMethodAccessorImpl.java",
+            "lineNumber": -2,
+            "className": "sun.reflect.NativeMethodAccessorImpl",
+            "nativeMethod": true
+        },
+        {
+            "methodName": "invoke",
+            "fileName": "NativeMethodAccessorImpl.java",
+            "lineNumber": 62,
+            "className": "sun.reflect.NativeMethodAccessorImpl",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "invoke",
+            "fileName": "DelegatingMethodAccessorImpl.java",
+            "lineNumber": 43,
+            "className": "sun.reflect.DelegatingMethodAccessorImpl",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "invoke",
+            "fileName": "Method.java",
+            "lineNumber": 498,
+            "className": "java.lang.reflect.Method",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "invoke",
+            "fileName": "ResourceMethodInvocationHandlerFactory.java",
+            "lineNumber": 81,
+            "className": "org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "run",
+            "fileName": "AbstractJavaResourceMethodDispatcher.java",
+            "lineNumber": 144,
+            "className": "org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "invoke",
+            "fileName": "AbstractJavaResourceMethodDispatcher.java",
+            "lineNumber": 161,
+            "className": "org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "doDispatch",
+            "fileName": "JavaResourceMethodDispatcherProvider.java",
+            "lineNumber": 160,
+            "className": "org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "dispatch",
+            "fileName": "AbstractJavaResourceMethodDispatcher.java",
+            "lineNumber": 99,
+            "className": "org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "invoke",
+            "fileName": "ResourceMethodInvoker.java",
+            "lineNumber": 389,
+            "className": "org.glassfish.jersey.server.model.ResourceMethodInvoker",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "access$100",
+            "fileName": "ResourceMethodInvoker.java",
+            "lineNumber": 102,
+            "className": "org.glassfish.jersey.server.model.ResourceMethodInvoker",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "call",
+            "fileName": "ResourceMethodInvoker.java",
+            "lineNumber": 336,
+            "className": "org.glassfish.jersey.server.model.ResourceMethodInvoker$2",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "call",
+            "fileName": "ResourceMethodInvoker.java",
+            "lineNumber": 333,
+            "className": "org.glassfish.jersey.server.model.ResourceMethodInvoker$2",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "run",
+            "fileName": "ServerRuntime.java",
+            "lineNumber": 865,
+            "className": "org.glassfish.jersey.server.ServerRuntime$AsyncResponder$2$1",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "call",
+            "fileName": "Errors.java",
+            "lineNumber": 271,
+            "className": "org.glassfish.jersey.internal.Errors$1",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "call",
+            "fileName": "Errors.java",
+            "lineNumber": 267,
+            "className": "org.glassfish.jersey.internal.Errors$1",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "process",
+            "fileName": "Errors.java",
+            "lineNumber": 315,
+            "className": "org.glassfish.jersey.internal.Errors",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "process",
+            "fileName": "Errors.java",
+            "lineNumber": 297,
+            "className": "org.glassfish.jersey.internal.Errors",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "process",
+            "fileName": "Errors.java",
+            "lineNumber": 267,
+            "className": "org.glassfish.jersey.internal.Errors",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "runInScope",
+            "fileName": "RequestScope.java",
+            "lineNumber": 317,
+            "className": "org.glassfish.jersey.process.internal.RequestScope",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "run",
+            "fileName": "ServerRuntime.java",
+            "lineNumber": 860,
+            "className": "org.glassfish.jersey.server.ServerRuntime$AsyncResponder$2",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "call",
+            "fileName": "Executors.java",
+            "lineNumber": 511,
+            "className": "java.util.concurrent.Executors$RunnableAdapter",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "run",
+            "fileName": "FutureTask.java",
+            "lineNumber": 266,
+            "className": "java.util.concurrent.FutureTask",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "runWorker",
+            "fileName": "ThreadPoolExecutor.java",
+            "lineNumber": 1149,
+            "className": "java.util.concurrent.ThreadPoolExecutor",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "run",
+            "fileName": "ThreadPoolExecutor.java",
+            "lineNumber": 624,
+            "className": "java.util.concurrent.ThreadPoolExecutor$Worker",
+            "nativeMethod": false
+        },
+        {
+            "methodName": "run",
+            "fileName": "Thread.java",
+            "lineNumber": 748,
+            "className": "java.lang.Thread",
+            "nativeMethod": false
+        }
+    ],
+    "message": null,
+    "localizedMessage": null,
+    "suppressed": []
+}
